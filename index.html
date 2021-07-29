@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>calculadora</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header><svg class="vector">
+      <?xml version="1.0" encoding="utf-8"?>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100.0px" height="100.0px" viewBox="0 0 100.0 100.0" enable-background="new 0 0 100.0 100.0" xml:space="preserve">
+        <defs>
+          <style type="text/css">
+            @font-face {
+              font-family: 'righteous';
+              src: url('./righteous.ttf');
+            }
+          </style>
+          <filter id="glow0" x="-200%" y="-200%" width="600%" height="600%">
+            <feOffset result="offOut" in="SourceGraphic" dx="-1.7802194" dy="1.7802194" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2.2252743" />
+            <feFlood flood-color="#000000" flood-opacity="1.000" result="flood" />
+            <feComposite in="flood" in2="blurOut" operator="in" result="blendOut0" />
+            <feBlend in="blendOut0" in2="blendOut0" result="blendOut1" mode="normal" />
+            <feBlend in="SourceGraphic" in2="blendOut1" mode="normal" />
+          </filter>
+        </defs>
+        <text font-size="43.331272" font-family="righteous" stroke-width="1.9346528" stroke="#0025A5" stroke-opacity="1.000" fill-opacity="0" text-anchor="start" filter="url(#glow0)" transform="rotate(-0.0 50.17103 56.092556) scale(0.59099656 1.0)">
+          <tspan x="7.5686235" y="51.837418">franx</tspan>
+          <tspan x="10.227692" y="95.168686">8bits</tspan>
+        </text>
+        <text font-size="43.331272" font-family="righteous" fill="#00FEFF" stroke-width="0" fill-opacity="0.816" text-anchor="start" filter="url(#glow0)" transform="rotate(-0.0 50.17103 56.092556) scale(0.59099656 1.0)">
+          <tspan x="7.5686235" y="51.837418">franx</tspan>
+          <tspan x="10.227692" y="95.168686">8bits</tspan>
+        </text>
+      </svg></header>
+  <h3>CALCULADORA BASICA</h3>
+  <p>calculadora sin decimales</p>
+  <!-- inicio codigo calculadora -->
+  <form name="calculator">
+    <input type="textfield" name="ans" value="">
+    <br>
+    <input type="button" value="1" onclick="document.calculator.ans.value+='1'">
+    <input type="button" value="2" onclick="document.calculator.ans.value+='2'">
+    <input type="button" value="3" onclick="document.calculator.ans.value+='3'">
+    <input type="button" value="+" onclick="document.calculator.ans.value+='+'">
+    <br>
+    <input type="button" value="4" onclick="document.calculator.ans.value+='4'">
+    <input type="button" value="5" onclick="document.calculator.ans.value+='5'">
+    <input type="button" value="6" onclick="document.calculator.ans.value+='6'">
+    <input type="button" value="-" onclick="document.calculator.ans.value+='-'">
+    <br>
+    <input type="button" value="7" onclick="document.calculator.ans.value+='7'">
+    <input type="button" value="8" onclick="document.calculator.ans.value+='8'">
+    <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
+    <input type="button" value="*" onclick="document.calculator.ans.value+='*'">
+    <br>
+    <input type="reset" value="C">
+    <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
+    <input type="button" value="/" onclick="document.calculator.ans.value+='/'">
+    <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+  </form>
+  <!-- fin codigo calculadora -->
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>
